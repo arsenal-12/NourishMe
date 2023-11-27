@@ -13,23 +13,17 @@ NourishMe is a holistic wellness platform that provides users with personalized 
 -flask run
 
 ## Technologies
-Flask (Python)
-HTML, CSS, JavaScript
-Pandas (for data manipulation)
+-Flask (Python)
+-HTML, CSS, JavaScript
+-Pandas (for data manipulation)
 
 ## Contributing
 Contributions are welcome! If you find a bug or want to add a new feature, please follow these steps:
-1.Fork the repository.
-Create a new branch:
-bash
-git checkout -b feature/your-feature-name
-2.Make your changes and commit them:
-bash
-git commit -am 'Add some feature'
-3.Push to the branch:
-bash
-git push origin feature/your-feature-name
-4.Create a pull request and describe your changes.
+Fork the repository.
+Create a new branch:git checkout -b feature/your-feature-name.
+Make your changes and commit them:git commit -am 'Add some feature'.
+Push to the branch:git push origin feature/your-feature-name.
+Create a pull request and describe your changes.
 
-##License
+## License
 This project is licensed under the MIT License.
