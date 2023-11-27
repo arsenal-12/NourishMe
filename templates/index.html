@@ -1,0 +1,92 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            /* background: url('static/happy.jpg') center center/cover no-repeat; /* Updated to center the background image */
+            color: #000; /* Change text color to black */
+            height: 200px; /* Adjust the height based on your design */
+            padding: 0 50px;
+            width: 100%; /* Set width to 100% to cover the entire viewport */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; /* Arrange child elements in a column */
+        }
+
+        h1, h2 {
+            margin: 10px 0; /* Add margin to separate the two headings */
+            font-weight:500px;
+            height:500px;
+        }
+
+        .container {
+            display: flex; /* Make the container a flex container */
+            justify-content: space-around; /* Distribute items evenly along the main axis */
+            max-width: 800px; /* Adjust the max-width based on your design */
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%; /* Adjust the width based on your layout */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+
+        .card img {
+            width: 100%; /* Make the image width 100% of the card */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        a.button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        a.button:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 2.5em;">NurishMe</h1>
+        <h2 style="font-size: 1.5em;">Healthy Mind Healthy Life</h2>
+    </header>
+    <div class="container">
+        <!-- Nutrition Planning Card -->
+        <div class="card">
+            <img src="static/nutrition.jpg" alt="Nutrition Planning Image">
+            <a href="{{ url_for('nutrition_planning') }}" class="button">Nutrition Planning</a>
+        </div>
+
+        <!-- Mental Assistance Card -->
+        <div class="card">
+            <img src="static/mental.jpg" alt="Mental Assistance Image">
+            <a href="{{ url_for('mental_wellness') }}" class="button">Mental Assistance</a>
+        </div>
+    </div>
+</body>
+</html>

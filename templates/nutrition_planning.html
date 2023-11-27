@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Dish Recommendation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Dish Recommendation</h1>
+        <form action="{{ url_for('calculate_intake') }}" method="post">
+            <!-- Add these fields to your form in index.html -->
+<label for="age">Age:</label>
+<input type="text" id="age" name="age" required>
+
+<label for="height">Height (cm):</label>
+<input type="text" id="height" name="height" required>
+
+<label for="weight">Weight (kg):</label>
+<input type="text" id="weight" name="weight" required>
+
+<label for="gender">Gender:</label>
+<select id="gender" name="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select>
+
+<label for="body_fat">Body Fat Level:</label>
+<select id="body_fat" name="body_fat" required>
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+</select>
+
+<label for="activity_level">Activity Level:</label>
+<select id="activity_level" name="activity_level" required>
+    <option value="sedentary">Sedentary</option>
+    <option value="moderate">Moderate</option>
+    <option value="active">Active</option>
+</select>
+
+<label for="weight_goal">Weight Goal:</label>
+<select id="weight_goal" name="weight_goal" required>
+    <option value="lose_weight">Lose Weight</option>
+    <option value="maintain">Maintain</option>
+    <option value="build_muscle">Build Muscle</option>
+</select>
+<button type="submit">Recommend Dishes</button>
+        </form>
+    </div>
+</body>
+</html>
