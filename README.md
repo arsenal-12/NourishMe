@@ -15,6 +15,7 @@ NourishMe is a holistic wellness platform that provides users with personalized 
 ## Technologies
 -Flask
 -HTML, CSS, JavaScript
+-Note: The API for mental assistant is from CHATGPTAI , one should make use of their own API as sharing API key is not good code practice
 
 
 ## Contributing
